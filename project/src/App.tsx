@@ -37,27 +37,7 @@ function App() {
         
       }
     }
-    // },
-    // {
-    //   title: "CodeConnect",
-    //   description: "Plateforme collaborative pour développeurs avec partage de code en temps réel. Les développeurs peuvent collaborer sur des projets, partager du code et communiquer en temps réel.",
-    //   tech: ["Node.js", "Socket.io", "React", "MongoDB"],
-    //   image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?fit=crop&w=800&h=400",
-    //   links: {
-    //     github: "https://github.com/ali-sougui/codeconnect",
-    //     live: "https://codeconnect.demo.com"
-    //   }
-    // },
-    // {
-    //   title: "VideoCours",
-    //   description: "Plateforme d'apprentissage en ligne avec système de streaming vidéo optimisé et suivi de progression personnalisé.",
-    //   tech: ["Next.js", "AWS", "Node.js", "PostgreSQL"],
-    //   image: "https://images.unsplash.com/photo-1516321497487-e288fb19713f?fit=crop&w=800&h=400",
-    //   links: {
-    //     github: "https://github.com/ali-sougui/videocours",
-    //     live: "https://videocours.demo.com"
-    //   }
-    // }
+   
   ];
 
   const skills = [
@@ -87,47 +67,7 @@ function App() {
     }
   ];
 
-  const certifications = [
-    {
-      title: "AWS Certified Solutions Architect",
-      issuer: "Amazon Web Services",
-      date: "2024",
-      image: "https://images.unsplash.com/photo-1516321165247-4aa89a48be28?fit=crop&w=200&h=200"
-    },
-    {
-      title: "Professional Cloud Developer",
-      issuer: "Google Cloud",
-      date: "2023",
-      image: "https://images.unsplash.com/photo-1516321497487-e288fb19713f?fit=crop&w=200&h=200"
-    },
-    {
-      title: "Certified Kubernetes Administrator",
-      issuer: "Cloud Native Computing Foundation",
-      date: "2023",
-      image: "https://images.unsplash.com/photo-1516321165247-4aa89a48be28?fit=crop&w=200&h=200"
-    }
-  ];
-
-  const testimonials = [
-    {
-      name: "Sarah Chen",
-      role: "CTO, TechStart Inc.",
-      content: "Ali a transformé notre infrastructure cloud, améliorant significativement nos performances et réduisant nos coûts de 40%.",
-      image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?fit=crop&w=100&h=100"
-    },
-    {
-      name: "Marc Dubois",
-      role: "Lead Developer, InnoTech",
-      content: "Un développeur exceptionnel avec une vraie vision technique. Sa contribution à notre projet a été déterminante.",
-      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?fit=crop&w=100&h=100"
-    },
-    {
-      name: "Emma Thompson",
-      role: "Product Manager, DataFlow",
-      content: "La capacité d'Ali à traduire des besoins complexes en solutions élégantes est impressionnante.",
-      image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?fit=crop&w=100&h=100"
-    }
-  ];
+ 
 
   return (
     <div className="min-h-screen bg-[#0a192f] text-slate-300">
@@ -337,85 +277,7 @@ function App() {
         </div>
       </section>
 
-      {/* Certifications Section */}
-      {/* <section id="certifications" className="py-20 px-6">
-        <div className="container mx-auto">
-          <motion.h2
-            initial="hidden"
-            whileInView="visible"
-            variants={fadeIn}
-            viewport={{ once: true }}
-            className="text-3xl font-bold text-slate-200 mb-12"
-          >
-            Certifications
-          </motion.h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {certifications.map((cert, index) => (
-              <motion.div
-                key={index}
-                initial="hidden"
-                whileInView="visible"
-                variants={fadeIn}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.1 }}
-                className="bg-slate-800/50 p-6 rounded-lg hover:bg-slate-800/70 transition-colors"
-                whileHover={{ scale: 1.02 }}
-              >
-                <img
-                  src={cert.image}
-                  alt={cert.title}
-                  className="w-16 h-16 rounded-full mb-4"
-                />
-                <h3 className="text-xl font-semibold text-blue-400 mb-2">{cert.title}</h3>
-                <p className="text-slate-400">{cert.issuer}</p>
-                <p className="text-sm text-slate-500">{cert.date}</p>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section> */}
-
-      {/* Testimonials Section */}
-      {/*<section id="témoignages" className="py-20 px-6 bg-slate-900/30">
-        <div className="container mx-auto">
-          <motion.h2
-            initial="hidden"
-            whileInView="visible"
-            variants={fadeIn}
-            viewport={{ once: true }}
-            className="text-3xl font-bold text-slate-200 mb-12"
-          >
-            Témoignages
-          </motion.h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {testimonials.map((testimonial, index) => (
-              <motion.div
-                key={index}
-                initial="hidden"
-                whileInView="visible"
-                variants={fadeIn}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.1 }}
-                className="bg-slate-800/50 p-6 rounded-lg hover:bg-slate-800/70 transition-colors"
-                whileHover={{ scale: 1.02 }}
-              >
-                <div className="flex items-center gap-4 mb-4">
-                  <img
-                    src={testimonial.image}
-                    alt={testimonial.name}
-                    className="w-12 h-12 rounded-full"
-                  />
-                  <div>
-                    <h3 className="font-semibold text-blue-400">{testimonial.name}</h3>
-                    <p className="text-sm text-slate-400">{testimonial.role}</p>
-                  </div>
-                </div>
-                <p className="text-slate-300 italic">"{testimonial.content}"</p>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>*/}
+      
 
       {/* Contact Section */}
       <section id="contact" className="py-20 px-6">
